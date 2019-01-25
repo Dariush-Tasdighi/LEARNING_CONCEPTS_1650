@@ -10,6 +10,7 @@ namespace Dtx.Windows.Forms
 				System.Drawing.Color.Khaki;
 		}
 
+		// Solution (1)
 		//protected override void OnMouseEnter(EventArgs e)
 		//{
 		//	base.OnMouseEnter(e);
@@ -23,9 +24,11 @@ namespace Dtx.Windows.Forms
 
 		//	BackColor = System.Drawing.SystemColors.Control;
 		//}
+		// /Solution (1)
 
 
 
+		// Solution (2)
 		//protected System.Drawing.Color currentBackColor;
 
 		//protected override void OnMouseEnter(EventArgs e)
@@ -43,9 +46,11 @@ namespace Dtx.Windows.Forms
 
 		//	BackColor = currentBackColor;
 		//}
+		// /Solution (2)
 
 
 
+		// Solution (3)
 		//public System.Drawing.Color HoverBackColor;
 
 		//protected System.Drawing.Color currentBackColor;
@@ -65,9 +70,11 @@ namespace Dtx.Windows.Forms
 
 		//	BackColor = currentBackColor;
 		//}
+		// /Solution (3)
 
 
 
+		// Solution (4)
 		//public System.Drawing.Color HoverBackColor { get; set; }
 
 		//protected System.Drawing.Color currentBackColor;
@@ -87,9 +94,11 @@ namespace Dtx.Windows.Forms
 
 		//	BackColor = currentBackColor;
 		//}
+		// /Solution (4)
 
 
 
+		// Solution (5)
 		[System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Khaki")]
 		public System.Drawing.Color HoverBackColor { get; set; }
 
@@ -110,5 +119,6 @@ namespace Dtx.Windows.Forms
 
 			BackColor = currentBackColor;
 		}
+		// /Solution (5)
 	}
 }
