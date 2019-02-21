@@ -29,13 +29,13 @@ namespace Dtx.Windows.Forms
 
 
 		// Solution (2)
-		//protected System.Drawing.Color currentBackColor;
+		//protected System.Drawing.Color CurrentBackColor;
 
 		//protected override void OnMouseEnter(EventArgs e)
 		//{
 		//	base.OnMouseEnter(e);
 
-		//	currentBackColor = BackColor;
+		//	CurrentBackColor = BackColor;
 
 		//	BackColor = System.Drawing.Color.Khaki;
 		//}
@@ -44,7 +44,7 @@ namespace Dtx.Windows.Forms
 		//{
 		//	base.OnMouseLeave(e);
 
-		//	BackColor = currentBackColor;
+		//	BackColor = CurrentBackColor;
 		//}
 		// /Solution (2)
 
@@ -53,13 +53,13 @@ namespace Dtx.Windows.Forms
 		// Solution (3)
 		//public System.Drawing.Color HoverBackColor;
 
-		//protected System.Drawing.Color currentBackColor;
+		//protected System.Drawing.Color CurrentBackColor;
 
 		//protected override void OnMouseEnter(EventArgs e)
 		//{
 		//	base.OnMouseEnter(e);
 
-		//	currentBackColor = BackColor;
+		//	CurrentBackColor = BackColor;
 
 		//	BackColor = HoverBackColor;
 		//}
@@ -68,7 +68,7 @@ namespace Dtx.Windows.Forms
 		//{
 		//	base.OnMouseLeave(e);
 
-		//	BackColor = currentBackColor;
+		//	BackColor = CurrentBackColor;
 		//}
 		// /Solution (3)
 
@@ -77,13 +77,13 @@ namespace Dtx.Windows.Forms
 		// Solution (4)
 		//public System.Drawing.Color HoverBackColor { get; set; }
 
-		//protected System.Drawing.Color currentBackColor;
+		//protected System.Drawing.Color CurrentBackColor;
 
 		//protected override void OnMouseEnter(EventArgs e)
 		//{
 		//	base.OnMouseEnter(e);
 
-		//	currentBackColor = BackColor;
+		//	CurrentBackColor = BackColor;
 
 		//	BackColor = HoverBackColor;
 		//}
@@ -92,7 +92,7 @@ namespace Dtx.Windows.Forms
 		//{
 		//	base.OnMouseLeave(e);
 
-		//	BackColor = currentBackColor;
+		//	BackColor = CurrentBackColor;
 		//}
 		// /Solution (4)
 
@@ -102,22 +102,18 @@ namespace Dtx.Windows.Forms
 		[System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Khaki")]
 		public System.Drawing.Color HoverBackColor { get; set; }
 
-		protected System.Drawing.Color currentBackColor;
+		protected System.Drawing.Color CurrentBackColor;
 
 		protected override void OnMouseEnter(EventArgs e)
 		{
-			base.OnMouseEnter(e);
-
-			currentBackColor = BackColor;
+			CurrentBackColor = BackColor;
 
 			BackColor = HoverBackColor;
 		}
 
 		protected override void OnMouseLeave(EventArgs e)
 		{
-			base.OnMouseLeave(e);
-
-			BackColor = currentBackColor;
+			BackColor = CurrentBackColor;
 		}
 		// /Solution (5)
 	}
